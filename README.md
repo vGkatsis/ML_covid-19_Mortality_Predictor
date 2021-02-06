@@ -1,5 +1,33 @@
 # Prediction Of Deaths Caused By COVID-19
 
+## Regression Models
+
+Experiments have been conducted using a variety of different regression algorithms in order to find the one that bests fits
+our data. These are:
+
+<ul>
+<li> Linear Regression </li>
+<li> Lasso Regression </li>
+<li> Ridge Regression </li>
+<li> Elastic Net </li>
+<li> Decision Tree </li>
+<li> Suport Vector Machine </li>
+</ul>
+
+Each one has its own advantages and disadvantages and hence responds defferently to the requirements of this project.
+</br>The effectiveness of each algorithm is furthere discussed in the Experiments section.
+
+## Metrics
+
+The metrics choosen for measuring each models performane are:
+
+<ul>
+<li>R<sup>2</sup></li>
+<li>Mean Absolute Error</li>
+<li>Mean Squared Error</li>
+<li>Rooted Mean Squared Error</li>
+</ul>
+
 ## Running
 
 All the code and experiments for this project are included in the **src.ipynb** file which is a jupyter notebook.
