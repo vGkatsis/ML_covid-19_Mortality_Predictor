@@ -37,6 +37,7 @@ The metrics chosen for measuring each models performance are:
 <li>Mean Squared Error</li>
 <li>Rooted Mean Squared Error</li>
 </ul>
+
 ## Data
 Data for this project are taken from Our World in Data:
 > Hasell, J., Mathieu, E., Beltekian, D. _et al._ A cross-country database of COVID-19 testing. _Sci Data_ **7**, 345 (2020). [https://doi.org/10.1038/s41597-020-00688-8](https://doi.org/10.1038/s41597-020-00688-8)
