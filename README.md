@@ -1,12 +1,11 @@
 # Prediction Of Deaths Caused By COVID-19
 
-* [Prediction Of Deaths Caused By COVID-19](#prediction-of-deaths-caused-by-covid-19)
-      * [Overview](#overview)
-      * [Running](#running)
-      * [Regression Models](#regression-models)
-      * [Metrics](#metrics)
-      * [Data](#data)
-      * [Experiments](#experiments)
+* [Overview](#overview)
+* [Running](#running)
+* [Regression Models](#regression-models)
+* [Metrics](#metrics)
+* [Data](#data)
+* [Experiments](#experiments)
 
 
 ## Overview
