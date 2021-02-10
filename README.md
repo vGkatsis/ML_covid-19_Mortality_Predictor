@@ -6,6 +6,7 @@
 * [Metrics](#metrics)
 * [Data](#data)
 * [Experiments](#experiments)
+* [Dependencies](#dependencies)
 
 
 ## Overview
@@ -84,3 +85,25 @@ The table below show the experimental results for each algorithm in the testing 
 
 It is clear now that none of this models consists a feasible solution to the problem.
 Linear and Lasso regression have the best score in terms of both variable explanation and error approximation. Still the high values of MSE and RMSE scores indicate that these models can give large errors. Additionaly the R<sup>2</sup> scores mean that both models have a high variance.   
+
+## Dependencies
+In order to run the test on your own computer the following tools are needed:
+
+python 3.x</br></br>
+Modules:</br></br>
+csv
+```
+pip3 install python-csv
+```
+pandas
+```
+pip3 install pandas==0.24.2
+```
+sklearn
+```
+pip3 install -U scikit-learn
+```
+plotly
+```
+pip3 install plotly==4.14.1
+```
