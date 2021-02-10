@@ -1,6 +1,12 @@
-# Prediction Of Deaths Caused By COVID-19
+# Machine Learning covid-19 Mortality Predictor
 
-[TOC]
+* [Overview](#overview)
+* [Running](#running)
+* [Regression Models](#regression-models)
+* [Metrics](#metrics)
+* [Data](#data)
+* [Experiments](#experiments)
+
 
 ## Overview
 
@@ -21,6 +27,7 @@ our data. These are:
 <li> Linear Regression </li>
 <li> Lasso Regression </li>
 <li> Ridge Regression </li>
+<li> kNN Regression</li>
 <li> Elastic Net </li>
 <li> Suport Vector Machine </li>
 </ul>
@@ -37,6 +44,7 @@ The metrics chosen for measuring each models performance are:
 <li>Mean Squared Error</li>
 <li>Rooted Mean Squared Error</li>
 </ul>
+
 ## Data
 Data for this project are taken from Our World in Data:
 > Hasell, J., Mathieu, E., Beltekian, D. _et al._ A cross-country database of COVID-19 testing. _Sci Data_ **7**, 345 (2020). [https://doi.org/10.1038/s41597-020-00688-8](https://doi.org/10.1038/s41597-020-00688-8)
@@ -67,11 +75,12 @@ Step number four is the evaluation of the models. For this process the metrics d
 
 The table below show the experimental results for each algorithm in the testing dataset.
 
-|               | Linear Regression | Lasso Regression | Ridge Regression | Elastic Net |    SVM    |
-| :-----------: | :---------------: | :--------------: | :--------------: | :---------: | :-------: |
-| R<sup>2</sup> |       0.76        |       0.76       |       0.82       |    0.75     |   -0.34   |
-|      MAE      |      2756.4       |       2761       |      1463.2      |   2837.6    |  5508.6   |
-|      MSE      |     20662752      |     20737069     |     26953354     |  21816409   | 117010907 |
-|     RMSE      |      4545.63      |      4556.8      |       5191       |    4670     |   10817   |
+|               | Linear Regression | Lasso Regression | Ridge Regression | kNN Regression | Elastic Net |    SVM    |
+| :-----------: | :---------------: | :--------------: | :--------------: |:--------------:|:----------: | :-------: |
+| R<sup>2</sup> |       0.79        |       0.78       |       0.69       |       0.2      |     0.78    |   -0.15   |
+|      MAE      |      2326.4       |       2360       |      2438.9      |     4643.7     |    2419.1   |   5232.1  |
+|      MSE      |     18312097      |     19008276     |     27148578     |   69774062.2   |   19427773  | 100242603 |
+|     RMSE      |      4279.26      |      4359.8      |       5210       |      8353      |    4407.7   |   10012   |
 
-It is clear now that none of this models consists a feasible solution to the problem. Ridge regression has given the best score in terms of both variable explanation and error approximation but still the high values of MSE and RMSE scores indicate that this model can give errors much larger than the others.
+It is clear now that none of this models consists a feasible solution to the problem.
+Linear and Lasso regression have the best score in terms of both variable explanation and error approximation. Still the high values of MSE and RMSE scores indicate that these models can give large errors. Additionaly the R<sup>2</sup> scores mean that both models have a high variance.   
