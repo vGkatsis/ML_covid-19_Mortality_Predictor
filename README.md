@@ -1,4 +1,4 @@
-# Prediction Of Deaths Caused By COVID-19
+# Machine Learning covid-19 Mortality Predictor
 
 * [Overview](#overview)
 * [Running](#running)
