@@ -30,6 +30,7 @@ our data. These are:
 <li> Ridge Regression </li>
 <li> kNN Regression</li>
 <li> Elastic Net </li>
+<li> Decision Trees </li>
 <li> Suport Vector Machine </li>
 </ul>
 
@@ -76,15 +77,15 @@ Step number four is the evaluation of the models. For this process the metrics d
 
 The table below show the experimental results for each algorithm in the testing dataset.
 
-|               | Linear Regression | Lasso Regression | Ridge Regression | kNN Regression | Elastic Net |    SVM    |
-| :-----------: | :---------------: | :--------------: | :--------------: |:--------------:|:----------: | :-------: |
-| R<sup>2</sup> |       0.79        |       0.78       |       0.69       |       0.2      |     0.78    |   -0.15   |
-|      MAE      |      2326.4       |       2360       |      2438.9      |     4643.7     |    2419.1   |   5232.1  |
-|      MSE      |     18312097      |     19008276     |     27148578     |   69774062.2   |   19427773  | 100242603 |
-|     RMSE      |      4279.26      |      4359.8      |       5210       |      8353      |    4407.7   |   10012   |
+|               | Linear Regression | Lasso Regression | Ridge Regression | kNN Regression | Elastic Net | Decision Trees |   SVM    |
+| :-----------: | :---------------: | :--------------: | :--------------: |:--------------:|:----------: | :------------: |:-------: |
+| R<sup>2</sup> |       0.79        |       0.78       |       0.69       |       0.2      |     0.78    |       0.92     |  -0.15   |
+|      MAE      |      2326.4       |       2360       |      2438.9      |     4643.7     |    2419.1   |       1599     |  5232.1  |
+|      MSE      |     18312097      |     19008276     |     27148578     |   69774062.2   |   19427773  |     7362844    |100242603 |
+|     RMSE      |      4279.26      |      4359.8      |       5210       |      8353      |    4407.7   |     2713.46    |  10012   |
 
 It is clear now that none of this models consists a feasible solution to the problem.
-Linear and Lasso regression have the best score in terms of both variable explanation and error approximation. Still the high values of MSE and RMSE scores indicate that these models can give large errors. Additionaly the R<sup>2</sup> scores mean that both models have a high variance.   
+Decision trees regression has the best score in terms of both variable explanation and error approximation in the test dataset. Still the high values of MSE and RMSE scores, both in test and validation datasets, as well as the low R<sup>2</sup> score in validation,indicate that this model can give large errors.
 
 ## Dependencies
 In order to run the test on your own computer the following tools are needed:
