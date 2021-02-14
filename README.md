@@ -17,7 +17,7 @@ This project is an attempt to predict the number of deaths caused by covid-19 in
 
 All the code and experiments for this project are included in the **src.ipynb** file which is a jupyter notebook.                                                                                   This notebook contains graphs created using the plotly python library which (for the time being) cannot be rendered by git-hub.
 So in order to view the whole code and examples the following **nbviewer** link is provided:
-[src.ipynb](https://nbviewer.jupyter.org/github/vGkatsis/Prediction_Of_Number_Of_Deaths_Caused_By_COVID-19/blob/devel/src.ipynb?flush_cache=true)
+[src.ipynb](https://nbviewer.jupyter.org/github/vGkatsis/ML_covid-19_Mortality_Predictor/blob/main/src.ipynb?flush_cache=true)
 
 ## Regression Models
 
